@@ -1,4 +1,4 @@
-include <../test.scad>
+include <../specscad/test.scad>
 include <clamp.scad>
 
 echo(describe("clamp", [

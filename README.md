@@ -28,7 +28,7 @@ Make sure to specify one or more spec files.
 Suppose you have a `clamp()` function that restricts a value `x` to the range `[min, max]`:
 
 ```scad
-// clamp.scad
+// example/clamp.scad
 clamp = function(x, min_val, max_val)
   max(min(x, max_val), min_val);
 ```
@@ -40,7 +40,7 @@ OpenScad offers an `assert()` function to use.
 note: evaluation stops at the first failure.
 
 ```scad
-// clamp.test.scad
+// example/clamp.test.scad
 include <clamp.scad>
 
 assert(clamp(5, 0, 10) == 5, "clamp: returns value when within range");
@@ -56,8 +56,8 @@ assert(clamp(15, 0, 10) == 10, "clamp: clamps value above max");
 All tests are evaluated, whether they pass or fail.
 
 ```scad
-// clamp.spec.scad
-include <../test.scad>
+// example/clamp.spec.scad
+include <../specscad/test.scad>
 include <clamp.scad>
 
 echo(describe("clamp", [
