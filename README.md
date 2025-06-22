@@ -2,20 +2,14 @@
 
 BDD-style Specification Testing for OpenSCAD
 
----
-
 ## Introduction
 
 [OpenSCAD](https://openscad.org/) is a fantastic tool for parametric 3D modeling, but it doesn’t provide native support for unit testing your functions. **SpecSCAD** fills this gap by offering a simple, readable BDD-style testing framework inspired by JavaScript tools like Mocha and Jest. It enables you to write structured tests for your OpenSCAD functions using describe, it, and expect.
-
----
 
 ## Prerequisites
 
 * OpenSCAD installed and accessible from the command line (i.e., openscad command works).
 * Bash shell environment (Linux, macOS, or Windows Subsystem for Linux).
-
----
 
 ## Usage
 
@@ -28,8 +22,6 @@ You can run tests on your spec files using the included shell script:
 
 This script runs OpenSCAD in headless mode and outputs test results to the console.
 Make sure to specify one or more spec files.
-
----
 
 ## Example
 
@@ -97,20 +89,14 @@ clamp
 3 passed, 1 failed.
 ```
 
----
-
 ## Notes
 
 * SpecSCAD tests **only functions** (not modules), encouraging you to place core logic into reusable functions.
 * The framework is lightweight and simple—no external dependencies beyond OpenSCAD and Bash.
 
----
-
 ## Contributing
 
 Contributions, feedback, and ideas are very welcome! Feel free to open issues or submit pull requests to improve SpecSCAD.
-
----
 
 ## License
 
